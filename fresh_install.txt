@@ -1,0 +1,83 @@
+PING
+FLUSHDB
+scan 0 MATCH * COUNT 10000
+SCARD servergroups
+SADD servergroups Lobby
+SADD servergroups MIN
+HLEN servergroups.Lobby
+HSETNX servergroups.Lobby name Lobby
+HSETNX servergroups.Lobby prefix Lobby
+HSETNX servergroups.Lobby ram 512
+HSETNX servergroups.Lobby cpu 1
+HSETNX servergroups.Lobby totalServers 0
+HSETNX servergroups.Lobby joinableServers 0
+HSETNX servergroups.Lobby portSection 25701
+HSETNX servergroups.Lobby arcadeGroup false
+HSETNX servergroups.Lobby minPlayers 1
+HSETNX servergroups.Lobby maxPlayers 50
+HSETNX servergroups.Lobby pvp false
+HSETNX servergroups.Lobby tournament false
+HSETNX servergroups.Lobby tournamentPoints false
+HSETNX servergroups.Lobby serverType dedicated
+HSETNX servergroups.Lobby addNoCheat true
+HSETNX servergroups.Lobby addWorldEdit false
+HSETNX servergroups.Lobby worldZip lobby.zip
+HSETNX servergroups.Lobby configPath plugins/Hub
+HSETNX servergroups.Lobby plugin Hub.jar
+HLEN servergroups.MIN
+HSETNX servergroups.MIN name MIN
+HSETNX servergroups.MIN prefix MIN
+HSETNX servergroups.MIN ram 512
+HSETNX servergroups.MIN cpu 1
+HSETNX servergroups.MIN totalServers 0
+HSETNX servergroups.MIN joinableServers 0
+HSETNX servergroups.MIN portSection 25801
+HSETNX servergroups.MIN arcadeGroup true
+HSETNX servergroups.MIN minPlayers 1
+HSETNX servergroups.MIN maxPlayers 28
+HSETNX servergroups.MIN pvp true
+HSETNX servergroups.MIN tournament false
+HSETNX servergroups.MIN tournamentPoints false
+HSETNX servergroups.MIN serverType Minigames
+HSETNX servergroups.MIN teamRejoin false
+HSETNX servergroups.MIN teamAutoJoin true
+HSETNX servergroups.MIN teamForceBalance true
+HSETNX servergroups.MIN gameAutoStart true
+HSETNX servergroups.MIN gameTimeout true 
+HSETNX servergroups.MIN rewardGems true
+HSETNX servergroups.MIN rewardItems true
+HSETNX servergroups.MIN rewardStats true
+HSETNX servergroups.MIN rewardAchievements true
+HSETNX servergroups.MIN hotbarInventory true
+HSETNX servergroups.MIN hotbarHubClock true
+HSETNX servergroups.MIN playerKickIdle true
+HSETNX servergroups.MIN games BaconBrawl,Lobbers,DeathTag,DragonEscape,Dragons,Evolution,Micro,MilkCow,Paintball,Quiver,Runner,Sheep,Snake,SneakyAssassins,Spleef,SquidShooter,TurfWars,WitherAssault,
+HSETNX servergroups.MIN addNoCheat true
+HSETNX servergroups.MIN addWorldEdit false
+HSETNX servergroups.MIN worldZip arcade.zip
+HSETNX servergroups.MIN configPath plugins/Arcade
+HSETNX servergroups.MIN plugin Arcade.jar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
