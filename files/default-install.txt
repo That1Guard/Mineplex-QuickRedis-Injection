@@ -1,10 +1,5 @@
-PING
 FLUSHDB
-scan 0 MATCH * COUNT 10000
-SCARD servergroups
-SADD servergroups Lobby
-SADD servergroups MIN
-HLEN servergroups.Lobby
+
 HSETNX servergroups.Lobby name Lobby
 HSETNX servergroups.Lobby prefix Lobby
 HSETNX servergroups.Lobby ram 512
@@ -24,7 +19,20 @@ HSETNX servergroups.Lobby addWorldEdit false
 HSETNX servergroups.Lobby worldZip lobby.zip
 HSETNX servergroups.Lobby configPath plugins/Hub
 HSETNX servergroups.Lobby plugin Hub.jar
-HLEN servergroups.MIN
+HSETNX servergroups.Lobby teamRejoin false
+HSETNX servergroups.Lobby teamAutoJoin false
+HSETNX servergroups.Lobby teamForceBalance false
+HSETNX servergroups.Lobby gameAutoStart false
+HSETNX servergroups.Lobby gameTimeout false
+HSETNX servergroups.Lobby rewardGems false
+HSETNX servergroups.Lobby rewardItems false
+HSETNX servergroups.Lobby rewardStats false
+HSETNX servergroups.Lobby rewardAchievements false
+HSETNX servergroups.Lobby hotbarInventory false
+HSETNX servergroups.Lobby hotbarHubClock false
+HSETNX servergroups.Lobby playerKickIdle false
+HSETNX servergroups.Lobby games null
+
 HSETNX servergroups.MIN name MIN
 HSETNX servergroups.MIN prefix MIN
 HSETNX servergroups.MIN ram 512
@@ -58,26 +66,5 @@ HSETNX servergroups.MIN worldZip arcade.zip
 HSETNX servergroups.MIN configPath plugins/Arcade
 HSETNX servergroups.MIN plugin Arcade.jar
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SADD servergroups Lobby
+SADD servergroups MIN
