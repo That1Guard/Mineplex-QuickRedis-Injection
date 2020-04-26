@@ -51,7 +51,7 @@ HSETNX servergroups.MIN rewardAchievements true
 HSETNX servergroups.MIN hotbarInventory true
 HSETNX servergroups.MIN hotbarHubClock true
 HSETNX servergroups.MIN playerKickIdle true
-HSETNX servergroups.MIN games BaconBrawl,Lobbers,DeathTag,DragonEscape,Dragons,Evolution,Micro,MilkCow,Paintball,Quiver,Runner,Sheep,Snake,SneakyAssassins,Spleef,SquidShooter,TurfWars,WitherAssault,
+HSETNX servergroups.MIN games BaconBrawl,Lobbers,DeathTag,DragonEscape,Dragons,Evolution,Micro,MilkCow,Paintball,Quiver,Runner,Sheep,Snake,SneakyAssassins,Spleef,SquidShooter,TurfWars,WitherAssault
 HSETNX servergroups.MIN addNoCheat true
 HSETNX servergroups.MIN addWorldEdit false
 HSETNX servergroups.MIN worldZip arcade.zip
