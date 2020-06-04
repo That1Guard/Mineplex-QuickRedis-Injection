@@ -5,9 +5,6 @@ You must have a runnable redis-server and redis-cli available for this injection
 Please note that these scripts assume that the IP:Port is set as "127.0.0.1:6379" with no set password. An option may be later added if warranted. <br />
 Another thing to note is that this script only interacts with db0 (the only concernable db) and will flush it's entire contents in case from earlier attempts of setting up redis.
 
-## Note
-As usual, I haven't tested these a lot, so don't fully expect them to work
-
 ## Disclaimer
 This deletes data in your redis server, therefor you may lose **everything** in the server once you run this. It is your responsibility to make sure you have backed up any data before running any scripts or files provided here. By using these scripts you understand the risk of data loss and agree that you have taken the proper precautions beforehand.
 
