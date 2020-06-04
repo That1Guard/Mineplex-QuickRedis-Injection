@@ -6,7 +6,7 @@ Please note that these scripts assume that the IP:Port is set as "127.0.0.1:6379
 Another thing to note is that this script only interacts with db0 (the only concernable db) and will flush it's entire contents in case from earlier attempts of setting up redis.
 
 ## Disclaimer
-This deletes data in your redis server, therefor you may lose **everything** in the server once you run this. It is your responsibility to make sure you have backed up any data before running any scripts or files provided here. By using these scripts you understand the risk of data loss and agree that you have taken the proper precautions beforehand.
+This deletes data in your redis server, therefore you may lose **everything** in the server once you run this. It is your responsibility to make sure you have backed up any data before running any scripts or files provided here. By using these scripts you understand the risk of data loss and agree that you have taken the proper precautions beforehand.
 
 ## Depends
 * Runnable redis server with a `redis-cli` binary file
